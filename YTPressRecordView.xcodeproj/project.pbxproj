@@ -1,0 +1,578 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EB0F8065228D5B1F00F886A2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EB0F8064228D5B1F00F886A2 /* AppDelegate.m */; };
+		EB0F8068228D5B1F00F886A2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB0F8067228D5B1F00F886A2 /* ViewController.m */; };
+		EB0F806B228D5B1F00F886A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB0F8069228D5B1F00F886A2 /* Main.storyboard */; };
+		EB0F806D228D5B2100F886A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB0F806C228D5B2100F886A2 /* Assets.xcassets */; };
+		EB0F8070228D5B2100F886A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB0F806E228D5B2100F886A2 /* LaunchScreen.storyboard */; };
+		EB0F8073228D5B2100F886A2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EB0F8072228D5B2100F886A2 /* main.m */; };
+		EB0F807D228D5B2100F886A2 /* YTPressRecordViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EB0F807C228D5B2100F886A2 /* YTPressRecordViewTests.m */; };
+		EB0F8088228D5B2100F886A2 /* YTPressRecordViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EB0F8087228D5B2100F886A2 /* YTPressRecordViewUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EB0F8079228D5B2100F886A2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EB0F8058228D5B1F00F886A2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EB0F805F228D5B1F00F886A2;
+			remoteInfo = YTPressRecordView;
+		};
+		EB0F8084228D5B2100F886A2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EB0F8058228D5B1F00F886A2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EB0F805F228D5B1F00F886A2;
+			remoteInfo = YTPressRecordView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EB0F8060228D5B1F00F886A2 /* YTPressRecordView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YTPressRecordView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB0F8063228D5B1F00F886A2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EB0F8064228D5B1F00F886A2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EB0F8066228D5B1F00F886A2 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		EB0F8067228D5B1F00F886A2 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		EB0F806A228D5B1F00F886A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EB0F806C228D5B2100F886A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EB0F806F228D5B2100F886A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EB0F8071228D5B2100F886A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB0F8072228D5B2100F886A2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EB0F8078228D5B2100F886A2 /* YTPressRecordViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YTPressRecordViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB0F807C228D5B2100F886A2 /* YTPressRecordViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YTPressRecordViewTests.m; sourceTree = "<group>"; };
+		EB0F807E228D5B2100F886A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB0F8083228D5B2100F886A2 /* YTPressRecordViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YTPressRecordViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB0F8087228D5B2100F886A2 /* YTPressRecordViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YTPressRecordViewUITests.m; sourceTree = "<group>"; };
+		EB0F8089228D5B2100F886A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EB0F805D228D5B1F00F886A2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB0F8075228D5B2100F886A2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB0F8080228D5B2100F886A2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EB0F8057228D5B1F00F886A2 = {
+			isa = PBXGroup;
+			children = (
+				EB0F8062228D5B1F00F886A2 /* YTPressRecordView */,
+				EB0F807B228D5B2100F886A2 /* YTPressRecordViewTests */,
+				EB0F8086228D5B2100F886A2 /* YTPressRecordViewUITests */,
+				EB0F8061228D5B1F00F886A2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EB0F8061228D5B1F00F886A2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EB0F8060228D5B1F00F886A2 /* YTPressRecordView.app */,
+				EB0F8078228D5B2100F886A2 /* YTPressRecordViewTests.xctest */,
+				EB0F8083228D5B2100F886A2 /* YTPressRecordViewUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EB0F8062228D5B1F00F886A2 /* YTPressRecordView */ = {
+			isa = PBXGroup;
+			children = (
+				EB0F8063228D5B1F00F886A2 /* AppDelegate.h */,
+				EB0F8064228D5B1F00F886A2 /* AppDelegate.m */,
+				EB0F8066228D5B1F00F886A2 /* ViewController.h */,
+				EB0F8067228D5B1F00F886A2 /* ViewController.m */,
+				EB0F8069228D5B1F00F886A2 /* Main.storyboard */,
+				EB0F806C228D5B2100F886A2 /* Assets.xcassets */,
+				EB0F806E228D5B2100F886A2 /* LaunchScreen.storyboard */,
+				EB0F8071228D5B2100F886A2 /* Info.plist */,
+				EB0F8072228D5B2100F886A2 /* main.m */,
+			);
+			path = YTPressRecordView;
+			sourceTree = "<group>";
+		};
+		EB0F807B228D5B2100F886A2 /* YTPressRecordViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				EB0F807C228D5B2100F886A2 /* YTPressRecordViewTests.m */,
+				EB0F807E228D5B2100F886A2 /* Info.plist */,
+			);
+			path = YTPressRecordViewTests;
+			sourceTree = "<group>";
+		};
+		EB0F8086228D5B2100F886A2 /* YTPressRecordViewUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EB0F8087228D5B2100F886A2 /* YTPressRecordViewUITests.m */,
+				EB0F8089228D5B2100F886A2 /* Info.plist */,
+			);
+			path = YTPressRecordViewUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EB0F805F228D5B1F00F886A2 /* YTPressRecordView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB0F808C228D5B2100F886A2 /* Build configuration list for PBXNativeTarget "YTPressRecordView" */;
+			buildPhases = (
+				EB0F805C228D5B1F00F886A2 /* Sources */,
+				EB0F805D228D5B1F00F886A2 /* Frameworks */,
+				EB0F805E228D5B1F00F886A2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YTPressRecordView;
+			productName = YTPressRecordView;
+			productReference = EB0F8060228D5B1F00F886A2 /* YTPressRecordView.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EB0F8077228D5B2100F886A2 /* YTPressRecordViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB0F808F228D5B2100F886A2 /* Build configuration list for PBXNativeTarget "YTPressRecordViewTests" */;
+			buildPhases = (
+				EB0F8074228D5B2100F886A2 /* Sources */,
+				EB0F8075228D5B2100F886A2 /* Frameworks */,
+				EB0F8076228D5B2100F886A2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EB0F807A228D5B2100F886A2 /* PBXTargetDependency */,
+			);
+			name = YTPressRecordViewTests;
+			productName = YTPressRecordViewTests;
+			productReference = EB0F8078228D5B2100F886A2 /* YTPressRecordViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EB0F8082228D5B2100F886A2 /* YTPressRecordViewUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB0F8092228D5B2100F886A2 /* Build configuration list for PBXNativeTarget "YTPressRecordViewUITests" */;
+			buildPhases = (
+				EB0F807F228D5B2100F886A2 /* Sources */,
+				EB0F8080228D5B2100F886A2 /* Frameworks */,
+				EB0F8081228D5B2100F886A2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EB0F8085228D5B2100F886A2 /* PBXTargetDependency */,
+			);
+			name = YTPressRecordViewUITests;
+			productName = YTPressRecordViewUITests;
+			productReference = EB0F8083228D5B2100F886A2 /* YTPressRecordViewUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EB0F8058228D5B1F00F886A2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "易特周";
+				TargetAttributes = {
+					EB0F805F228D5B1F00F886A2 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					EB0F8077228D5B2100F886A2 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = EB0F805F228D5B1F00F886A2;
+					};
+					EB0F8082228D5B2100F886A2 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = EB0F805F228D5B1F00F886A2;
+					};
+				};
+			};
+			buildConfigurationList = EB0F805B228D5B1F00F886A2 /* Build configuration list for PBXProject "YTPressRecordView" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EB0F8057228D5B1F00F886A2;
+			productRefGroup = EB0F8061228D5B1F00F886A2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EB0F805F228D5B1F00F886A2 /* YTPressRecordView */,
+				EB0F8077228D5B2100F886A2 /* YTPressRecordViewTests */,
+				EB0F8082228D5B2100F886A2 /* YTPressRecordViewUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EB0F805E228D5B1F00F886A2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB0F8070228D5B2100F886A2 /* LaunchScreen.storyboard in Resources */,
+				EB0F806D228D5B2100F886A2 /* Assets.xcassets in Resources */,
+				EB0F806B228D5B1F00F886A2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB0F8076228D5B2100F886A2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB0F8081228D5B2100F886A2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EB0F805C228D5B1F00F886A2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB0F8068228D5B1F00F886A2 /* ViewController.m in Sources */,
+				EB0F8073228D5B2100F886A2 /* main.m in Sources */,
+				EB0F8065228D5B1F00F886A2 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB0F8074228D5B2100F886A2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB0F807D228D5B2100F886A2 /* YTPressRecordViewTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB0F807F228D5B2100F886A2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB0F8088228D5B2100F886A2 /* YTPressRecordViewUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EB0F807A228D5B2100F886A2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EB0F805F228D5B1F00F886A2 /* YTPressRecordView */;
+			targetProxy = EB0F8079228D5B2100F886A2 /* PBXContainerItemProxy */;
+		};
+		EB0F8085228D5B2100F886A2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EB0F805F228D5B1F00F886A2 /* YTPressRecordView */;
+			targetProxy = EB0F8084228D5B2100F886A2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EB0F8069228D5B1F00F886A2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EB0F806A228D5B1F00F886A2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EB0F806E228D5B2100F886A2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EB0F806F228D5B2100F886A2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EB0F808A228D5B2100F886A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EB0F808B228D5B2100F886A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EB0F808D228D5B2100F886A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = YTPressRecordView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = test.YTPressRecordView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EB0F808E228D5B2100F886A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = YTPressRecordView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = test.YTPressRecordView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EB0F8090228D5B2100F886A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = YTPressRecordViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = test.YTPressRecordViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YTPressRecordView.app/YTPressRecordView";
+			};
+			name = Debug;
+		};
+		EB0F8091228D5B2100F886A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = YTPressRecordViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = test.YTPressRecordViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YTPressRecordView.app/YTPressRecordView";
+			};
+			name = Release;
+		};
+		EB0F8093228D5B2100F886A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = YTPressRecordViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = test.YTPressRecordViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = YTPressRecordView;
+			};
+			name = Debug;
+		};
+		EB0F8094228D5B2100F886A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = YTPressRecordViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = test.YTPressRecordViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = YTPressRecordView;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EB0F805B228D5B1F00F886A2 /* Build configuration list for PBXProject "YTPressRecordView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB0F808A228D5B2100F886A2 /* Debug */,
+				EB0F808B228D5B2100F886A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB0F808C228D5B2100F886A2 /* Build configuration list for PBXNativeTarget "YTPressRecordView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB0F808D228D5B2100F886A2 /* Debug */,
+				EB0F808E228D5B2100F886A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB0F808F228D5B2100F886A2 /* Build configuration list for PBXNativeTarget "YTPressRecordViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB0F8090228D5B2100F886A2 /* Debug */,
+				EB0F8091228D5B2100F886A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB0F8092228D5B2100F886A2 /* Build configuration list for PBXNativeTarget "YTPressRecordViewUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB0F8093228D5B2100F886A2 /* Debug */,
+				EB0F8094228D5B2100F886A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EB0F8058228D5B1F00F886A2 /* Project object */;
+}
