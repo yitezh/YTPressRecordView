@@ -41,7 +41,6 @@ NSInteger recordViewTag = 12462727;
     self.recordRippleImageView.frame =CGRectMake(CGRectGetMaxX(self.statusImageView.frame)+10, self.recordRippleImageView.frame.origin.y, self.recordRippleImageView.widthValue, self.statusImageView.heightValue);
     self.recordRippleImageView.originSize =  self.recordRippleImageView.frame.size;
     self.statusLabel.topValue = self.heightValue - self.statusLabel.heightValue-10;
-    [self.recordRippleImageView updateWithPower:9];
 }
 
 

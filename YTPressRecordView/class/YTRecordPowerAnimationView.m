@@ -17,24 +17,13 @@
 @end
 
 @implementation YTRecordPowerAnimationView
-- (instancetype)initWithFrame:(CGRect)frame {
-    if(self == [super initWithFrame:frame]) {
-        [self initSubView];
-    }
-    return self;
-}
 
-- (void)initSubView {
-    _imgContent = [UIImageView new];
-    _imgContent.backgroundColor = [UIColor clearColor];
-    _imgContent.image = [UIImage imageNamed:@"record_ripple"];
-    [self addSubview:_imgContent];
-    _imgContent.frame = CGRectMake(0, 0, self.frame.size.width, self.frame.size.height);
-}
+
+
 
 - (void)updateWithPower:(float)power
 {
-    int viewCount = ceil(fabs(power)*10);
+    int viewCount = ceil(fabs(power)*20);
     viewCount =  MIN(viewCount, 9);
     viewCount =  MAX(viewCount, 1);
     
@@ -48,8 +37,19 @@
     maskLayer.backgroundColor = [UIColor blackColor].CGColor;
     maskLayer.path = path.CGPath;
     
-    _imgContent.layer.mask = maskLayer;
+    self.imgContent.layer.mask = maskLayer;
     
+}
+
+- (UIImageView *)imgContent{
+    if(!_imgContent) {
+        _imgContent = [UIImageView new];
+        _imgContent.backgroundColor = [UIColor clearColor];
+        _imgContent.image = [UIImage imageNamed:@"record_ripple"];
+        [self addSubview:_imgContent];
+        _imgContent.frame = CGRectMake(0, 0, self.frame.size.width, self.frame.size.height);
+    }
+    return _imgContent;
 }
 
 @end

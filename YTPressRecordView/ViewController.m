@@ -201,21 +201,6 @@ CGFloat  release_distance  = 80;
 
 //播放
 - (void)playButtonClicked:(id)sender {
-//   NSString *urlString = [YTRecordFileManager cacheFileWidthPath:@"tempRecordPath" Name:@"tempRecord.wav"];
-//   self.audioPlayer = [[AVAudioPlayer alloc]initWithContentsOfURL:[NSURL URLWithString:urlString] fileTypeHint:AVFileTypeMPEGLayer3 error:nil];
-//    AVAudioSession * session = [AVAudioSession sharedInstance];
-//    [session setActive:YES error:nil];
-//    [session setCategory:AVAudioSessionCategoryPlayback error:nil];
-//
-//    self.audioPlayer.numberOfLoops = 0;
-//
-//    [self.audioPlayer prepareToPlay];
-//    [self.audioPlayer play];
-    
-    
-    
-    
-    
     self.audioPlayer  = [YTAudioPlayerManager sharedManager];
     [self.audioPlayer  play];
     

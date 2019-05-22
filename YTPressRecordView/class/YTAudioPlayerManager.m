@@ -77,7 +77,7 @@
     CFRelease(url);
     
     
-    //获取audio的format(就是我们录制的时候配置的参数)
+    //获取audio的format(就是录制的时候配置的参数)
     UInt32 dateFormatSize = sizeof(self.basicFormat);
     AudioFileGetProperty(self.playFileID, kAudioFilePropertyDataFormat, &dateFormatSize, &_basicFormat);
     
