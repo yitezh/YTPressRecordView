@@ -6,15 +6,13 @@
 //  Copyright © 2019 Instanza Inc. All rights reserved.
 //
 
-#import "WWHoldButton.h"
-@interface WWHoldButton ()
+#import "YTHoldButton.h"
+#import "UIColor+Hex.h"
+@interface YTHoldButton ()
 
 @end
 #define SCALE(s)                         ((s) / 375.0 * SCREEN_WIDTH)
-@implementation WWHoldButton
-
-
-
+@implementation YTHoldButton
 
 - (instancetype)initWithFrame:(CGRect)frame {
     if(self = [super initWithFrame:frame]) {
@@ -24,9 +22,9 @@
 }
 
 - (void)initSubViews {
-    UILabel *label = [[UILabel alloc]initWithFrame:self.frame];
-    label.text = NSLocalizedString(@"talkview.hold2talk", nil);
-    label.textColor = [UIColor colorWithHex:0x8E8E93];
+    UILabel *label = [[UILabel alloc]initWithFrame:self.bounds];
+    label.text = @"按下说话";
+    label.textColor = [UIColor blackColor];
     label.font = [UIFont systemFontOfSize:16];
     label.textAlignment = NSTextAlignmentCenter;
     [self addSubview:label];
@@ -37,12 +35,6 @@
     [super setFrame:frame];
     self.titleLabel.frame = self.bounds;
     
-}
-
-- (BOOL)pointInside:(CGPoint)point withEvent:(UIEvent *)event{
-    CGFloat extra = - SCALE(20);
-    CGRect newRect = CGRectInset(self.bounds, 0, extra);
-    return CGRectContainsPoint(newRect, point);
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {

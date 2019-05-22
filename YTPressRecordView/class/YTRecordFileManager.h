@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface RecordFileManager : NSObject
+@interface YTRecordFileManager : NSObject
 + (NSString *)cacheFileWidthPath:(NSString *)path Name:(NSString *)name;
 + (void)removeFileAtPath:(NSString *)path;
 @end

@@ -7,13 +7,13 @@
 //
 
 #import "YTRecordStatusView.h"
-#import "RecordPowerAnimationView.h"
+#import "YTRecordPowerAnimationView.h"
 #import "UIView+Additions.h"
 @interface YTRecordStatusView()
 @property (strong,nonatomic)UIImageView *backImageView;
 @property (strong,nonatomic)UILabel *statusLabel;
 @property (strong,nonatomic)UIImageView *statusImageView;
-@property (strong,nonatomic)RecordPowerAnimationView *recordRippleImageView;
+@property (strong,nonatomic)YTRecordPowerAnimationView *recordRippleImageView;
 @end
 
 CGFloat leftMargin =40;
@@ -120,10 +120,10 @@ NSInteger recordViewTag = 12462727;
 }
 
 
-- (RecordPowerAnimationView *)recordRippleImageView{
+- (YTRecordPowerAnimationView *)recordRippleImageView{
     if(!_recordRippleImageView) {
         UIImageView *imageView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"record_ripple"]];
-        _recordRippleImageView = [[RecordPowerAnimationView alloc]initWithFrame:imageView.bounds];
+        _recordRippleImageView = [[YTRecordPowerAnimationView alloc]initWithFrame:imageView.bounds];
      
         
     }

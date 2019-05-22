@@ -15,6 +15,16 @@
 		EB0F8073228D5B2100F886A2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EB0F8072228D5B2100F886A2 /* main.m */; };
 		EB0F807D228D5B2100F886A2 /* YTPressRecordViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EB0F807C228D5B2100F886A2 /* YTPressRecordViewTests.m */; };
 		EB0F8088228D5B2100F886A2 /* YTPressRecordViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EB0F8087228D5B2100F886A2 /* YTPressRecordViewUITests.m */; };
+		EB0F8097228D5B3C00F886A2 /* YTHoldButton.m in Sources */ = {isa = PBXBuildFile; fileRef = EB0F8096228D5B3C00F886A2 /* YTHoldButton.m */; };
+		EB0F809B228D5BC800F886A2 /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = EB0F809A228D5BC800F886A2 /* UIColor+Hex.m */; };
+		EB0F809E228D5BE800F886A2 /* YTRecordStatusView.m in Sources */ = {isa = PBXBuildFile; fileRef = EB0F809D228D5BE800F886A2 /* YTRecordStatusView.m */; };
+		EB0F80A1228D5C0B00F886A2 /* YTRecordPowerAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = EB0F80A0228D5C0B00F886A2 /* YTRecordPowerAnimationView.m */; };
+		EB0F80A4228D5CC800F886A2 /* UIView+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = EB0F80A3228D5CC800F886A2 /* UIView+Additions.m */; };
+		EB19D0DF22924FA30052BC5B /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB19D0DE22924FA30052BC5B /* AVFoundation.framework */; };
+		EB19D0E122924FAD0052BC5B /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB19D0E022924FAD0052BC5B /* AVKit.framework */; };
+		EB19D0E4229250350052BC5B /* YTAudioRecordManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EB19D0E3229250350052BC5B /* YTAudioRecordManager.m */; };
+		EB19D0E722929D2F0052BC5B /* YTRecordFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EB19D0E622929D2F0052BC5B /* YTRecordFileManager.m */; };
+		EB19D0EA2292A6780052BC5B /* YTAudioPlayerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EB19D0E92292A6780052BC5B /* YTAudioPlayerManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +61,24 @@
 		EB0F8083228D5B2100F886A2 /* YTPressRecordViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YTPressRecordViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB0F8087228D5B2100F886A2 /* YTPressRecordViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YTPressRecordViewUITests.m; sourceTree = "<group>"; };
 		EB0F8089228D5B2100F886A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB0F8095228D5B3C00F886A2 /* YTHoldButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTHoldButton.h; sourceTree = "<group>"; };
+		EB0F8096228D5B3C00F886A2 /* YTHoldButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTHoldButton.m; sourceTree = "<group>"; };
+		EB0F8099228D5BC700F886A2 /* UIColor+Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Hex.h"; sourceTree = "<group>"; };
+		EB0F809A228D5BC800F886A2 /* UIColor+Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Hex.m"; sourceTree = "<group>"; };
+		EB0F809C228D5BE800F886A2 /* YTRecordStatusView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTRecordStatusView.h; sourceTree = "<group>"; };
+		EB0F809D228D5BE800F886A2 /* YTRecordStatusView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTRecordStatusView.m; sourceTree = "<group>"; };
+		EB0F809F228D5C0B00F886A2 /* YTRecordPowerAnimationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTRecordPowerAnimationView.h; sourceTree = "<group>"; };
+		EB0F80A0228D5C0B00F886A2 /* YTRecordPowerAnimationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTRecordPowerAnimationView.m; sourceTree = "<group>"; };
+		EB0F80A2228D5CBC00F886A2 /* UIView+Additions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Additions.h"; sourceTree = "<group>"; };
+		EB0F80A3228D5CC800F886A2 /* UIView+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Additions.m"; sourceTree = "<group>"; };
+		EB19D0DE22924FA30052BC5B /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		EB19D0E022924FAD0052BC5B /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
+		EB19D0E2229250350052BC5B /* YTAudioRecordManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YTAudioRecordManager.h; sourceTree = "<group>"; };
+		EB19D0E3229250350052BC5B /* YTAudioRecordManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YTAudioRecordManager.m; sourceTree = "<group>"; };
+		EB19D0E522929D2F0052BC5B /* YTRecordFileManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YTRecordFileManager.h; sourceTree = "<group>"; };
+		EB19D0E622929D2F0052BC5B /* YTRecordFileManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YTRecordFileManager.m; sourceTree = "<group>"; };
+		EB19D0E82292A6780052BC5B /* YTAudioPlayerManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YTAudioPlayerManager.h; sourceTree = "<group>"; };
+		EB19D0E92292A6780052BC5B /* YTAudioPlayerManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YTAudioPlayerManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +86,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB19D0E122924FAD0052BC5B /* AVKit.framework in Frameworks */,
+				EB19D0DF22924FA30052BC5B /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +115,7 @@
 				EB0F807B228D5B2100F886A2 /* YTPressRecordViewTests */,
 				EB0F8086228D5B2100F886A2 /* YTPressRecordViewUITests */,
 				EB0F8061228D5B1F00F886A2 /* Products */,
+				EB19D0DD22924FA30052BC5B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +132,7 @@
 		EB0F8062228D5B1F00F886A2 /* YTPressRecordView */ = {
 			isa = PBXGroup;
 			children = (
+				EB0F8098228D5B6300F886A2 /* class */,
 				EB0F8063228D5B1F00F886A2 /* AppDelegate.h */,
 				EB0F8064228D5B1F00F886A2 /* AppDelegate.m */,
 				EB0F8066228D5B1F00F886A2 /* ViewController.h */,
@@ -130,6 +162,46 @@
 				EB0F8089228D5B2100F886A2 /* Info.plist */,
 			);
 			path = YTPressRecordViewUITests;
+			sourceTree = "<group>";
+		};
+		EB0F8098228D5B6300F886A2 /* class */ = {
+			isa = PBXGroup;
+			children = (
+				EB0F80A5228D5CDD00F886A2 /* category */,
+				EB0F809C228D5BE800F886A2 /* YTRecordStatusView.h */,
+				EB0F809D228D5BE800F886A2 /* YTRecordStatusView.m */,
+				EB19D0E2229250350052BC5B /* YTAudioRecordManager.h */,
+				EB19D0E3229250350052BC5B /* YTAudioRecordManager.m */,
+				EB19D0E82292A6780052BC5B /* YTAudioPlayerManager.h */,
+				EB19D0E92292A6780052BC5B /* YTAudioPlayerManager.m */,
+				EB0F8095228D5B3C00F886A2 /* YTHoldButton.h */,
+				EB0F8096228D5B3C00F886A2 /* YTHoldButton.m */,
+				EB0F809F228D5C0B00F886A2 /* YTRecordPowerAnimationView.h */,
+				EB0F80A0228D5C0B00F886A2 /* YTRecordPowerAnimationView.m */,
+				EB19D0E522929D2F0052BC5B /* YTRecordFileManager.h */,
+				EB19D0E622929D2F0052BC5B /* YTRecordFileManager.m */,
+			);
+			path = class;
+			sourceTree = "<group>";
+		};
+		EB0F80A5228D5CDD00F886A2 /* category */ = {
+			isa = PBXGroup;
+			children = (
+				EB0F80A2228D5CBC00F886A2 /* UIView+Additions.h */,
+				EB0F80A3228D5CC800F886A2 /* UIView+Additions.m */,
+				EB0F8099228D5BC700F886A2 /* UIColor+Hex.h */,
+				EB0F809A228D5BC800F886A2 /* UIColor+Hex.m */,
+			);
+			path = category;
+			sourceTree = "<group>";
+		};
+		EB19D0DD22924FA30052BC5B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EB19D0E022924FAD0052BC5B /* AVKit.framework */,
+				EB19D0DE22924FA30052BC5B /* AVFoundation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,9 +334,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB19D0E4229250350052BC5B /* YTAudioRecordManager.m in Sources */,
+				EB0F80A4228D5CC800F886A2 /* UIView+Additions.m in Sources */,
+				EB19D0E722929D2F0052BC5B /* YTRecordFileManager.m in Sources */,
 				EB0F8068228D5B1F00F886A2 /* ViewController.m in Sources */,
+				EB0F809B228D5BC800F886A2 /* UIColor+Hex.m in Sources */,
 				EB0F8073228D5B2100F886A2 /* main.m in Sources */,
+				EB19D0EA2292A6780052BC5B /* YTAudioPlayerManager.m in Sources */,
+				EB0F8097228D5B3C00F886A2 /* YTHoldButton.m in Sources */,
 				EB0F8065228D5B1F00F886A2 /* AppDelegate.m in Sources */,
+				EB0F80A1228D5C0B00F886A2 /* YTRecordPowerAnimationView.m in Sources */,
+				EB0F809E228D5BE800F886A2 /* YTRecordStatusView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -370,7 +450,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -423,7 +503,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -436,7 +516,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HP3F44276K;
 				INFOPLIST_FILE = YTPressRecordView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -452,7 +534,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HP3F44276K;
 				INFOPLIST_FILE = YTPressRecordView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

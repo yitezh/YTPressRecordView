@@ -10,7 +10,13 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface YTPlayerManager : NSObject
+@interface YTAudioPlayerManager : NSObject
+
+@property (assign,nonatomic)BOOL isPlaying;
+
++  (instancetype)sharedManager;
+
+- (void)play;
 
 @end
 

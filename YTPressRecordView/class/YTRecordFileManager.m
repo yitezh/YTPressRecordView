@@ -6,9 +6,9 @@
 //  Copyright © 2019 易特周. All rights reserved.
 //
 
-#import "RecordFileManager.h"
+#import "YTRecordFileManager.h"
 
-@implementation RecordFileManager
+@implementation YTRecordFileManager
 
 + (NSString *)cacheFileWidthPath:(NSString *)path Name:(NSString *)name {
     NSString *cachePath = [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) firstObject];

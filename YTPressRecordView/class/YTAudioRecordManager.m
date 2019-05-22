@@ -6,7 +6,7 @@
 //  Copyright © 2019 易特周. All rights reserved.
 //
 
-#import "YTAudioManager.h"
+#import "YTAudioRecordManager.h"
 #import <AVFoundation/AVFoundation.h>
 
 #import "YTRecordFileManager.h"
@@ -17,7 +17,7 @@
 #define YDefalutChannel  1
 #define YBitsPerChannel  16
 
-@interface YTAudioManager() {
+@interface YTAudioRecordManager() {
     AudioQueueRef audioQRef;       //音频队列对象指针
     AudioStreamBasicDescription recordFormat;   //音频流配置
     AudioQueueBufferRef audioBuffers[YBufferCount];  //音频流缓冲区对象
@@ -30,14 +30,14 @@
 
 
 
-@implementation YTAudioManager 
+@implementation YTAudioRecordManager 
 
 +  (instancetype)sharedManager {
     
-    static YTAudioManager *manager = nil;
+    static YTAudioRecordManager *manager = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        manager = [[YTAudioManager alloc]init];
+        manager = [[YTAudioRecordManager alloc]init];
     });
     return manager;
     
@@ -54,6 +54,7 @@
 - (void)initConfig {
     [self initFile];
     [self initFormat];
+    [self initAudio];
 }
 
 - (void)initFile {
@@ -88,14 +89,10 @@
         return ;
     }
     
-    
-    CFURLRef url = CFURLCreateWithString(kCFAllocatorDefault, (CFStringRef)self.recordFileName, NULL);
-    //创建音频文件夹
-    AudioFileCreateWithURL(url, kAudioFileCAFType, &recordFormat, kAudioFileFlags_EraseFile,&_recordFileID);
-    CFRelease(url);
+
     
     //计算估算的缓存区大小
-    int frames = (int)ceil(YBufferDurationSeconds * recordFormat.mSampleRate);
+    int frames = [self computeRecordBufferSize:&recordFormat seconds:YBufferDurationSeconds];
     int bufferByteSize = frames * recordFormat.mBytesPerFrame;
     //        NSLog(@"缓存区大小%d",bufferByteSize);
     //创建缓冲器
@@ -104,20 +101,55 @@
         AudioQueueEnqueueBuffer(audioQRef, audioBuffers[i], 0, NULL);
     }
     
-    self.recordPacket = 0;
+}
+
+- (int)computeRecordBufferSize:(const AudioStreamBasicDescription*)format seconds:(float)seconds
+{
+    int packets, frames, bytes = 0;
+    frames = (int)ceil(seconds * format->mSampleRate);
+    
+    if (format->mBytesPerFrame > 0)
+    {
+        bytes = frames * format->mBytesPerFrame;
+    }
+    else
+    {
+        UInt32 maxPacketSize = 0;
+        if (format->mBytesPerPacket > 0)
+        {
+            maxPacketSize = format->mBytesPerPacket;    // constant packet size
+        }
+        
+        if (format->mFramesPerPacket > 0)
+        {
+            packets = frames / format->mFramesPerPacket;
+        }
+        else
+        {
+            packets = frames;    // worst-case scenario: 1 frame in a packet
+        }
+        
+        if (packets == 0)        // sanity check
+        {
+            packets = 1;
+        }
+        
+        bytes = packets * maxPacketSize;
+    }
+    return bytes;
 }
 
 //回调
 void inputBufferHandler(void *inUserData, AudioQueueRef inAQ, AudioQueueBufferRef inBuffer, const AudioTimeStamp *inStartTime,UInt32 inNumPackets, const AudioStreamPacketDescription *inPacketDesc)
 {
-    YTAudioManager *audioManager = [YTAudioManager sharedManager];
+    YTAudioRecordManager *audioManager = [YTAudioRecordManager sharedManager];
     if (inNumPackets > 0) {
         //写入文件
         AudioFileWritePackets(audioManager.recordFileID, FALSE, inBuffer->mAudioDataByteSize,inPacketDesc, audioManager.recordPacket, &inNumPackets, inBuffer->mAudioData);
-        audioManager.recordPacket += inNumPackets;
+           audioManager.recordPacket += inNumPackets;
     }
     if (audioManager.isRecording) {
-       //把存有音频数据的Buffer插入到AudioQueue内置的Buffer队列中
+       //将缓冲器重新放入缓冲队列，以便重复使用该缓冲器
         AudioQueueEnqueueBuffer(inAQ, inBuffer, 0, NULL);
     }
     
@@ -127,7 +159,12 @@ void inputBufferHandler(void *inUserData, AudioQueueRef inAQ, AudioQueueBufferRe
 {
     [YTRecordFileManager removeFileAtPath:self.recordFileName];
     
-    [self initAudio];
+    CFURLRef url = CFURLCreateWithString(kCFAllocatorDefault, (CFStringRef)self.recordFileName, NULL);
+    //创建音频文件夹
+    AudioFileCreateWithURL(url, kAudioFileCAFType, &recordFormat, kAudioFileFlags_EraseFile,&_recordFileID);
+    CFRelease(url);
+    
+    self.recordPacket = 0;
    
     //当有音频设备（比如播放音乐）导致改变时 需要配置
     [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayAndRecord error:nil];

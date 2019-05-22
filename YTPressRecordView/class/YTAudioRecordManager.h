@@ -10,13 +10,17 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface YTAudioManager : NSObject
+@interface YTAudioRecordManager : NSObject
 +  (instancetype)sharedManager;
 
 
 @property(nonatomic,assign)BOOL isRecording;
+//开始播放
 - (void)startRecord;
+//停止播放
 - (void)stopRecord;
+
+//获取音量
 - (float)getCurrentPower;
 @end
 

@@ -11,7 +11,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@protocol HoldButtonDelegate <NSObject>
+@protocol YTHoldButtonDelegate <NSObject>
 
 - (void)voiceButton_touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event;
 - (void)voiceButton_touchesCancelled:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event ;
@@ -19,10 +19,10 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)voiceButton_touchesMoved:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event;
 @end
 
-@interface WWHoldButton : UIView
+@interface YTHoldButton : UIView
 @property (strong,nonatomic)UILabel *titleLabel;
 
-@property (weak,nonatomic)id<HoldButtonDelegate> delegate;
+@property (weak,nonatomic)id<YTHoldButtonDelegate> delegate;
 @end
 
 NS_ASSUME_NONNULL_END

@@ -41,5 +41,7 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+    <key>NSMicrophoneUsageDescription</key>
+    <string>Let SOMA access your microphone so you can use your voice instead of fingers to talk to your friends.</string>
 </dict>
 </plist>
