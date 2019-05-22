@@ -2,8 +2,8 @@
 //  YTPlayerManager.m
 //  YTPressRecordView
 //
-//  Created by 易特周 on 2019/5/20.
-//  Copyright © 2019 易特周. All rights reserved.
+//  Created by soma on 2019/4/29.
+//  Copyright © 2019 Instanza Inc. All rights reserved.
 //
 
 #import "YTAudioPlayerManager.h"
