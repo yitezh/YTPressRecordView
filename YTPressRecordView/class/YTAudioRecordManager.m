@@ -54,7 +54,7 @@
 - (void)initConfig {
     [self initFile];
     [self initFormat];
-    [self initAudio];
+    
 }
 
 - (void)initFile {
@@ -158,7 +158,7 @@ void inputBufferHandler(void *inUserData, AudioQueueRef inAQ, AudioQueueBufferRe
 - (void)startRecord
 {
     [YTRecordFileManager removeFileAtPath:self.recordFileName];
-    
+    [self initAudio];
     CFURLRef url = CFURLCreateWithString(kCFAllocatorDefault, (CFStringRef)self.recordFileName, NULL);
     //创建音频文件夹
     AudioFileCreateWithURL(url, kAudioFileCAFType, &recordFormat, kAudioFileFlags_EraseFile,&_recordFileID);
@@ -224,7 +224,7 @@ void inputBufferHandler(void *inUserData, AudioQueueRef inAQ, AudioQueueBufferRe
         //停止录音队列和移，这里无需考虑成功与否
         AudioQueueStop(audioQRef, true);
         AudioFileClose(_recordFileID);
-    
+        AudioQueueDispose(audioQRef, TRUE);
     }
 }
 
